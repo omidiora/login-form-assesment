@@ -121,7 +121,7 @@ const LoginForm = () => {
               // label="TextField"
             />
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={12} lg={12}  className="mt-12 ">
             <Typography variant="h5" align="left" className={classes.textInput}>
               Password
             </Typography>
@@ -141,7 +141,7 @@ const LoginForm = () => {
             />
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={12} lg={12} className="mt-12 mb-12">
             <Typography variant="h5" align="left" className={classes.textInput}>
               Confirm Password
             </Typography>
@@ -166,6 +166,7 @@ const LoginForm = () => {
                 align="center"
                 justify="center"
                 alignItems="center"
+                
               >
                {error ==null? <Alert severity="success">{message}!</Alert> : null }
               
@@ -179,6 +180,7 @@ const LoginForm = () => {
               >
                 <Button
                   color="primary"
+                  variant="contained"
                   className="mt-4 mb-4"
                   onClick={() =>  onSubmit()}
                 >
