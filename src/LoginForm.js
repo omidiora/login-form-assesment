@@ -101,7 +101,7 @@ const LoginForm = () => {
       <Typography variant="h4" align="Center" className="mt-3">
               Login Form
             </Typography>
-        <Grid container >
+        <Grid  container >
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" align="left" className={classes.textInput}>
               Email
